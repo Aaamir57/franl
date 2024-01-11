@@ -82,6 +82,7 @@ h1{
 text-align: center;
 font-family: Poppins;
 font-size: 14px;
+cursor:pointer;
 font-style: normal;
 font-weight: 400;
 line-height: 16px; /* 114.286% */
@@ -210,6 +211,7 @@ export const Sectiononemain = styled.div`
 export const Sectiononemainleft = styled.div`
   display: flex;
   flex-direction:column;
+  tex-align:center;
 
  
 h1{

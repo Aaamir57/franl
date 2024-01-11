@@ -3,7 +3,7 @@ import { Mainfooter, Mainfootericonsmainone, Mainfootercontent, Mainfooterbottom
 export default function Footer() {
     return (
         <div>
-            <Mainfooter>
+            <Mainfooter id="specificDiv">
                 <Mainfootercontent>
                     <h1>Want to follow my learnings?</h1>
                     <Mainfootersubmitmain>

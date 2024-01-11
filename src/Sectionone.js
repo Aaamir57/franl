@@ -1,9 +1,18 @@
 import React from 'react'
 import { Sectiononemain,Sectiononemainleftlineimage, Sectiononemainright, Sectiononemainleft, Sectiononemainleftbuttondiv, Sectiononemainleftbuttondivone,Sectiononemainleftbuttondivtwo } from './Styled';
 export default function Sectionone() {
+
+   
+    const scrollToDiv = () => {
+        const element = document.getElementById('specificDiv');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      };
+
     return (
         <div>
-            <Sectiononemain>
+            <Sectiononemain  id="specificDivhome">
                 <Sectiononemainleft>
                     <h1>
                         Hey, I am 👋<br />
@@ -19,11 +28,11 @@ export default function Sectionone() {
                         and strategies which help them achieve goals and build success in todays competitive marketplace.
                     </h2>
                     <Sectiononemainleftbuttondiv>
-                        <Sectiononemainleftbuttondivone>
+                        <Sectiononemainleftbuttondivone  onClick={scrollToDiv}>
                             <img alt=' ' src="./media/1.svg" />
                             <h5>Subscribe</h5>
                         </Sectiononemainleftbuttondivone>
-                        <Sectiononemainleftbuttondivtwo>
+                        <Sectiononemainleftbuttondivtwo onClick={scrollToDiv}>
                         <img alt=' ' src="./media/3.svg" />
                             <h3>
                             View Projects

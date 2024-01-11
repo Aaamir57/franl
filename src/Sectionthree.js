@@ -3,7 +3,7 @@ import { Sectionthreemain } from './Styled';
 export default function Sectionthree() {
   return (
     <div>
-      <Sectionthreemain>
+      <Sectionthreemain  id="specificDivproject">
         <h1>
           Amazing Projects!<br/>
           Let’s check it out.

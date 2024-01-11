@@ -1,6 +1,34 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import { Topnavbar, MainnavbarDIV, Mainnavbar, Mainnavbarlist, Mainnavbarbutton,Mainnavbarbuttononee, Mainnavbarlogo, Mainnavbarlogosm } from './Styled';
 export default function Navbar() {
+
+
+    const scrollToDiv = () => {
+        const element = document.getElementById('specificDiv');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      };
+
+
+
+      const scrollToDivhome = () => {
+        const element = document.getElementById('specificDivhome');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      };
+  
+
+
+      const scrollToDivproject = () => {
+        const element = document.getElementById('specificDivproject');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      };
+  
+  
     return (
         <div>
             <MainnavbarDIV>
@@ -10,11 +38,11 @@ export default function Navbar() {
                     </Mainnavbarlogo>
 
                     <Mainnavbarlist>
-                        <h1>Home</h1>
-                        <h1>Project</h1>
+                        <h1  onClick={scrollToDivhome}>Home</h1>
+                        <h1  onClick={scrollToDivproject}>Project</h1>
                         <h1>Blog</h1>
                     </Mainnavbarlist>
-                    <Mainnavbarbuttononee>
+                    <Mainnavbarbuttononee onClick={scrollToDiv}>
                         <img alt=' ' src="./media/1.svg" />
                         <h2>Subscribe</h2>
                     </Mainnavbarbuttononee>
