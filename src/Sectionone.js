@@ -10,6 +10,14 @@ export default function Sectionone() {
         }
       };
 
+
+       
+    const scrollToDivcards = () => {
+        const element = document.getElementById('specificDivcards');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      };
     return (
         <div>
             <Sectiononemain  id="specificDivhome">
@@ -32,7 +40,7 @@ export default function Sectionone() {
                             <img alt=' ' src="./media/1.svg" />
                             <h5>Subscribe</h5>
                         </Sectiononemainleftbuttondivone>
-                        <Sectiononemainleftbuttondivtwo onClick={scrollToDiv}>
+                        <Sectiononemainleftbuttondivtwo onClick={scrollToDivcards}>
                         <img alt=' ' src="./media/3.svg" />
                             <h3>
                             View Projects

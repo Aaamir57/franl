@@ -2,6 +2,7 @@ import './App.css';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import Sectionfour from './Sectionfour';
+import Sectionimage from './Sectionimage';
 import Sectionone from './Sectionone';
 import Sectionthree from './Sectionthree';
 import Sectiontwo from './Sectiontwo';
@@ -16,6 +17,7 @@ function App() {
         <Navbar />
         <Sectionone />
       </Topnavbar>
+      <Sectionimage/>
 
       <Sectiontwo/>
       <SectionTHREETOP>

@@ -4,7 +4,7 @@ export default function Sectionfour() {
     return (
         <div>
             <Sectionfourmain>
-                <Sectionfourmainone>
+                <Sectionfourmainone  id="specificDivcards">
                     <Sectionfouronelogo>
                         <img alt=' ' src="./media/4.png" />
                     </Sectionfouronelogo>

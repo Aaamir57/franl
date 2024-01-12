@@ -27,6 +27,13 @@ export default function Navbar() {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       };
+
+      const scrollToDivabout = () => {
+        const element = document.getElementById('specificDivabout');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      };
   
   
     return (
@@ -40,7 +47,7 @@ export default function Navbar() {
                     <Mainnavbarlist>
                         <h1  onClick={scrollToDivhome}>Home</h1>
                         <h1  onClick={scrollToDivproject}>Project</h1>
-                        <h1>Blog</h1>
+                        <h1  onClick={scrollToDivabout}>About</h1>
                     </Mainnavbarlist>
                     <Mainnavbarbuttononee onClick={scrollToDiv}>
                         <img alt=' ' src="./media/1.svg" />

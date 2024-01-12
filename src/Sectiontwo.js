@@ -1,9 +1,15 @@
 import React from 'react'
 import {Sectiontwomain,Sectiontwoleft,Sectiontworight,Sectiononemainleftbuttondivtwo } from './Styled';
 export default function Sectiontwo() {
+    const scrollToDivcards = () => {
+        const element = document.getElementById('specificDivcards');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      };
     return (
         <div>
-            <Sectiontwomain>
+            <Sectiontwomain id="specificDivabout">
                 <Sectiontwoleft>
                     <img alt=' ' src="./media/3.png" />
                 </Sectiontwoleft>
@@ -21,7 +27,7 @@ export default function Sectiontwo() {
                         healthcare – building a portfolio that not only fuels business growth,
                         but also shapes a brighter future, one optimized conversion at a time.
                     </h2>
-                    <Sectiononemainleftbuttondivtwo>
+                    <Sectiononemainleftbuttondivtwo  onClick={scrollToDivcards}>
                     <img alt=' ' src="./media/3.svg" />
                     <h3>
                         View Projects
