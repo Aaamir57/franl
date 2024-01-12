@@ -38,15 +38,15 @@ export default function Footer() {
                             </h4>
                         </Mainfooterbottom>
                         <Mainfootericonsmain>
-                            <Mainfootericonsmainone>
-                            <img alt=' ' src="./media/100.svg"  onClick={handleImageClick}/>
+                            <Mainfootericonsmainone  onClick={handleImageClick}>
+                            <img alt=' ' src="./media/100.svg" />
                            
                             </Mainfootericonsmainone>
-                            <Mainfootericonsmainone>
-                            <img alt=' ' src="./media/101.svg"  onClick={handleImageClick1} />
+                            <Mainfootericonsmainone onClick={handleImageClick1} >
+                            <img alt=' ' src="./media/101.svg"  />
                             </Mainfootericonsmainone>
-                            <Mainfootericonsmainone>
-                            <img alt=' ' src="./media/102.svg"  onClick={handleImageClick2} />
+                            <Mainfootericonsmainone  onClick={handleImageClick2}>
+                            <img alt=' ' src="./media/102.svg"  />
                             </Mainfootericonsmainone>
 
                         </Mainfootericonsmain>
